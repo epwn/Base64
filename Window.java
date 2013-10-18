@@ -10,8 +10,8 @@ import javax.swing.*;
 
 public class Window 
 {
-	JTextArea inputArea = new JTextArea();
-	JTextArea outputArea = new JTextArea();
+	JTextField inputArea = new JTextField();
+	JTextField outputArea = new JTextField();
 	JButton action = new JButton("Encode");
 	
 	Window()
@@ -48,10 +48,11 @@ public class Window
 		);
 		
 		//Create frame
-		frame.setSize(500, 400);
+		frame.setSize(500, 200);
 		frame.add(panel);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setResizable(false);
+		frame.setLocationRelativeTo(null);
 		frame.setVisible(true);
 	}
 	
